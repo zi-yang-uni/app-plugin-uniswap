@@ -87,4 +87,4 @@ def build_app(clone_dir: str, flags: str):
 def clone_and_pull_ethereum():
     clone_or_pull(APP_ETHEREUM_URL, APP_ETHEREUM_CLONE_DIR)
 def build_and_copy_ethereum():
-    build_app(APP_ETHEREUM_CLONE_DIR, flags="COIN=ethereum CHAIN=ethereum CAL_TEST_KEY=1 DOMAIN_NAME_TEST_KEY=1 SET_PLUGIN_TEST_KEY=1 NFT_TEST_KEY=1 TRUSTED_NAME_TEST_KEY=1")
+    build_app(APP_ETHEREUM_CLONE_DIR, flags="COIN=ethereum CHAIN=ethereum DEBUG=1")
